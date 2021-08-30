@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>Constellars World</title>
 	<link href="css/style.css" rel="stylesheet">
 </head>
@@ -30,6 +30,15 @@
      var inputName= document.getElementById("name");
      localStorage.setItem("name", inputName.value);
     }
+    addEventListener("click", function() {
+    var el = document.documentElement,
+	      rfs = el.requestFullscreen
+	        || el.webkitRequestFullScreen
+	        || el.mozRequestFullScreen
+	        || el.msRequestFullscreen;
+
+	    rfs.call(el);
+		});
 </script>
 </body>
 </html>
