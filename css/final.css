@@ -18,14 +18,8 @@ body{
 	z-index: 1;
 }
 .step2{
-	background: url(../img/final_bg.gif) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
 	font-family: gotham;
-	
+
 	display: none;
 	position: absolute;
 	top: 0;

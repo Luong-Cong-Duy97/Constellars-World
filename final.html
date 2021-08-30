@@ -53,11 +53,14 @@
 		$(document).ready(function(){
 			$('#submitBtn').on('click', function(){
 				$('.step1').fadeOut(function(){
-					$('.step2').fadeIn();
+					$('.step2').css({
+						'background': "url('img/final_bg.gif') no-repeat center center fixed",
+						'background-size': 'cover'
+					})
+					$('.step2').show();
 					$('#audio')[0].play();
 					$('.name_text').addClass('animate__zoomInDown');
 					
-
 					setTimeout(function(){
 						$('.name_text').removeClass('animate__zoomInDown')
 						$('.name_text').addClass('animate__infinite animate__pulse')
