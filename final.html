@@ -54,7 +54,8 @@
 			$('#submitBtn').on('click', function(){
 				$('.step1').fadeOut(function(){
 					$('.step2 .background').remove();
-					$('.step2').prepend('<img src="img/final_bg.gif" class="background">')
+					var time = new Date().getTime();
+					$('.step2').prepend('<img src="img/final_bg.gif?time=' + time + '" class="background">')
 					$('.step2').show();
 					$('#audio')[0].play();
 					$('.name_text').addClass('animate__zoomInDown');
