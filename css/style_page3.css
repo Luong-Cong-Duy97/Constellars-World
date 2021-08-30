@@ -1,5 +1,5 @@
-html{
-		background: url(../img/background_1.jpg) no-repeat center center fixed; 
+body{
+		background: url(../img/final_bg.gif) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -21,7 +21,7 @@ body{
   --animate-duration: 2s;
 }
 
-.animate__animated.animate__zoomOutUp {
+.animate__animated.animate__bounceOut {
   --animate-duration: 1s;
 }
 
@@ -37,7 +37,7 @@ body{
 	text-shadow: -4px 0px 5px #79690080;
 	text-transform: capitalize;
  	margin: 20px;
- 	margin-top: 43vw;
+ 	margin-top: 37vw;
  	-webkit-animation: glow 800ms ease-in-out infinite alternate;
   	-moz-animation: glow 800ms ease-in-out infinite alternate;
   	animation: glow 800ms ease-in-out infinite alternate;
@@ -63,4 +63,8 @@ body{
 }
 .video_container{
 	position: absolute;
+	top: 0;
+	left: 0;
+	width:  100vw;
+	height: 100%;
 }
