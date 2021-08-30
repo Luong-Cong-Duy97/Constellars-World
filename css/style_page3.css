@@ -7,40 +7,46 @@ html{
   	font-family: gotham;
 }
 body{
-	  	margin: 0;
+  	margin: 0;
 }
 
 
 .name_area{
-	z-index: 1;
+	z-index: 100;
+	width: 100vw;
+}
+
+.animate__animated.animate__zoomInDown {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__zoomOutUp {
+  --animate-duration: 1s;
 }
 
 .name_area .name_text p{
-
 	font-weight: 700;
 	color: white;
 	font-size: 45px;
 	text-align: center;
 	text-shadow: -4px 0px 5px #79690080;
-
-    padding: 120px 53px 0px 53px;
-    margin: 20px;
-
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
+	text-transform: capitalize;
+ 	margin: 20px;
+ 	margin-top: 43vw;
+ 	-webkit-animation: glow 2s ease-in-out infinite alternate;
   	-moz-animation: glow 2s ease-in-out infinite alternate;
   	animation: glow 2s ease-in-out infinite alternate;
-
 }
 @-webkit-keyframes glow {
-     from {
+  	from {
       color: #fff;
-    text-shadow: 0 0 10px #fffe06, 0 0 11px #fffe06, 0 0 12px #fffe06, 0 0 13px #fffe06, 0 0 14px #fffe06, 0 0 15px #fffe06, 0 0 16px #fffe06, 0 0 17px #fffe06;
-  }
+    	text-shadow: 0 0 10px #fff88e, 0 0 11px #fff88e, 0 0 12px #fff88e, 0 0 13px #fff88e, 0 0 14px #fff88e, 0 0 15px #fff88e, 0 0 16px #fff88e, 0 0 17px #fff88e;
+  	}
   
-  to {
-     color: gray;
-    text-shadow: 0 0 20px #fffe06, 0 0 30px #fffe06, 0 0 40px #fffe06, 0 0 50px #fffe06, 0 0 60px #fffe06, 0 0 70px #fffe06, 0 0 80px #fffe06, 0 1 90px #fffe06;
-  }
+  	to {
+  		color: #fff;
+    	text-shadow: 0 0 20px #fff88e, 0 0 30px #fff88e, 0 0 40px #fff88e, 0 0 50px #fff88e, 0 0 60px #fff88e, 0 0 70px #fff88e, 0 0 80px #fff88e, 0 1 90px #fff88e;
+  	}
 }
 
 .video_area{
