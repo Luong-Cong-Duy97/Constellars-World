@@ -1,9 +1,10 @@
 html{
-	background: url(/css/img/Mobile.mp4) no-repeat center center fixed; 
+		background: url(../img/background_1.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+
   	font-family: gotham;
 }
 body{
