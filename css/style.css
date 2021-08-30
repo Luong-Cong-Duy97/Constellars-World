@@ -1,0 +1,95 @@
+html{
+	background: url(../img/background_1.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+  	font-family: gotham;
+}
+
+
+.logo_area img{
+	width: 80px;
+    padding-left: 8%;
+    padding-top: 9%;
+}
+
+@font-face{
+	font-family: 'gotham';
+	src: url(../fonts/SVN_Gotham_Bold.ttf);
+	font-style: bold;
+	font-weight: 700;
+}
+
+.banner_area p{
+
+	font-weight: 700;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: -4px 0px 5px #79690080;
+
+	padding: 70px 30px 0px 30px;
+    margin: 20px;
+}
+
+
+.input_area{
+    margin-top: 80px;
+}
+.input_area .main_input_form{
+	width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    text-align: center;
+}
+.input_area .input_text p{
+	color: #26484d;
+    margin: 0;
+	font-size: 14px;
+	text-align: center;
+}
+.input_area input{
+    width: 80%;
+    background: #fffe06;
+    border: none;
+    height: 35px;
+    border-radius: 50px;
+    box-shadow: -4px -1px 5px #79690080,inset 0px 0px 3px #fa0000;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.input_area input[type="submit"]{
+    background: url(../img/button_background.png);
+    background-size: cover;
+    color: #26484d;
+    cursor: pointer;
+    font-weight: bold;
+    padding-bottom: 2px;
+    width: 190px;
+    text-align: center;
+    float: none;
+    margin-top: 42px;
+
+    height: 50px;
+    font-size: 20px;
+
+    padding: 10px;
+
+    box-shadow: -5px -1px 5px #79690080
+
+}
+
+.img_banner img{
+    width: 95%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.banner_area .banner_text2 p{
+    margin: 20px 20px 2px 20px;
+}

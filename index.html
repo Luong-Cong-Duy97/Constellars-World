@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Constellars World</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<section class="logo_area">
+		<img src="img/logo.png" alt="logo"/>
+	</section>
+	<section class="banner_area">
+		<div class="banner_text"><p>Chào mừng bạn đến với</p></div>
+		<div class="img_banner">
+			<img src="img/name_banner.png" alt="">
+		</div>
+	</section>
+	<section class="input_area">
+		<div class="input_text"><p>Họ & tên:</p></div>
+		<div class="main_input_form">
+			<form action="index2.html">
+				<input type="text" required="required" id="name">
+				<input onclick="store()" type="submit" value="Gửi">
+			</form> 
+		</div>
+	</section>
+	<script  type="text/javascript">
+  	function store(){
+     var inputName= document.getElementById("name");
+     localStorage.setItem("name", inputName.value);
+    }
+</script>
+</body>
+</html>
