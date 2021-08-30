@@ -24,6 +24,10 @@ body{
   --animate-duration: 1s;
 }
 
+.animate__animated.animate__pulse {
+  --animate-duration: 800ms;
+}
+
 .name_area .name_text p{
 	font-weight: 700;
 	color: white;
@@ -33,9 +37,9 @@ body{
 	text-transform: capitalize;
  	margin: 20px;
  	margin-top: 43vw;
- 	-webkit-animation: glow 2s ease-in-out infinite alternate;
-  	-moz-animation: glow 2s ease-in-out infinite alternate;
-  	animation: glow 2s ease-in-out infinite alternate;
+ 	-webkit-animation: glow 800ms ease-in-out infinite alternate;
+  	-moz-animation: glow 800ms ease-in-out infinite alternate;
+  	animation: glow 800ms ease-in-out infinite alternate;
 }
 @-webkit-keyframes glow {
   	from {
