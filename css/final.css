@@ -1,16 +1,39 @@
 body{
-		background: url(../img/final_bg.gif) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-
-  	font-family: gotham;
-}
-body{
   	margin: 0;
 }
 
+.step1{
+	background: url(../img/background_1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	font-family: gotham;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	z-index: 1;
+}
+.step2{
+	background: url(../img/final_bg.gif) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	font-family: gotham;
+	
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	z-index: 2;
+}
 
 .name_area{
 	z-index: 100;
