@@ -90,8 +90,7 @@ body {
 }
 
 .img_banner {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .img_banner img{
