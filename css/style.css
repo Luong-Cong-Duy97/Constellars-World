@@ -8,11 +8,19 @@ html{
   	font-family: gotham;
 }
 
+body {
+    margin:  0;
+    padding:  0;
+}
+
+.logo_area {
+    padding-top: 9vw;
+}
 
 .logo_area img{
 	width: 80px;
-    padding-left: 8%;
-    padding-top: 9%;
+    padding-left: 8vw;
+    
 }
 
 @font-face{
@@ -23,7 +31,6 @@ html{
 }
 
 .banner_area p{
-
 	font-weight: 700;
 	color: white;
 	font-size: 20px;
@@ -39,8 +46,6 @@ html{
     margin-top: 80px;
 }
 .input_area .main_input_form{
-	width: 100%;
-    overflow: hidden;
     margin-top: 5px;
     text-align: center;
     padding: 10px;
@@ -48,7 +53,7 @@ html{
 .input_area .input_text p{
 	color: #26484d;
     margin: 0;
-	font-size: 14px;
+	font-size: 3vw;
 	text-align: center;
 }
 .input_area input{
@@ -62,6 +67,7 @@ html{
     text-align: center;
     user-select: none;
     outline: none;
+    font-size: 3vw;
 }
 
 .input_area #submitBtn{
@@ -83,11 +89,17 @@ html{
     border-radius: 23px;
 }
 
+.img_banner {
+    display: flex;
+    justify-content: center;
+}
+
 .img_banner img{
     width: 95%;
     height: auto;
     padding: 0;
     margin: 0;
+    margin-right: 3%;
 }
 
 .banner_area .banner_text2 p{
