@@ -1,11 +1,18 @@
 html{
-	background: url(../img/background_1.jpg) no-repeat center center fixed; 
+	background: url(../img/background_1.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 
   	font-family: gotham;
+}
+
+@font-face{
+    font-family: 'gotham';
+    src: url(../fonts/SVN_Gotham_Bold.ttf);
+    font-style: bold;
+    font-weight: 700;
 }
 
 body {
@@ -20,14 +27,10 @@ body {
 .logo_area img{
 	width: 80px;
     padding-left: 8vw;
-    
 }
 
-@font-face{
-	font-family: 'gotham';
-	src: url(../fonts/SVN_Gotham_Bold.ttf);
-	font-style: bold;
-	font-weight: 700;
+.banner_area {
+    margin-top: 14vw;
 }
 
 .banner_area p{
@@ -56,6 +59,7 @@ body {
 	font-size: 3vw;
 	text-align: center;
 }
+
 .input_area input{
     width: 80%;
     background: #fffe06;
@@ -72,7 +76,7 @@ body {
 }
 
 .input_area #submitBtn{
-    background: url(../img/button_background.png);
+    background: url(../img/button_send.png);
     background-size: 100% 100%;
     color: #26484d;
     cursor: pointer;
@@ -100,8 +104,4 @@ body {
     padding: 0;
     margin: 0;
     margin-right: 2.5%;
-}
-
-.banner_area .banner_text2 p{
-    margin: 20px 20px 2px 20px;
 }

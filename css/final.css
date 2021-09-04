@@ -1,5 +1,76 @@
-body{
-  	margin: 0;
+@font-face{
+    font-family: 'gotham';
+    src: url(../fonts/SVN_Gotham_Bold.ttf);
+    font-style: bold;
+    font-weight: 700;
+}
+
+html{
+	background: url(../img/background_1.png) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+  	font-family: gotham;
+}
+
+body {
+    margin:  0;
+    padding:  0;
+}
+
+.logo_area {
+    padding-top: 9vw;
+}
+
+.logo_area img{
+	width: 80px;
+    padding-left: 8vw;
+}
+
+.banner_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:  #fff;
+  margin-bottom: 20vw;
+}
+
+.banner_area .banner_text {
+	margin-bottom: 3vw;
+}
+
+.banner_area .img_banner {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.banner_area .img_banner img {
+	width: 80%;
+}
+
+.input_area .main_input_form{
+	display: flex;
+	justify-content: center;
+}
+
+.input_area .main_input_form #submitBtn {
+	background: url(../img/button_ready.png);
+	background-size: cover;
+	border: none;
+  width: 48vw;
+  height: 53px;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 70vh;
 }
 
 .step1{
@@ -28,7 +99,6 @@ body{
 	position: absolute;
 	top: 0;
 }
-
 
 .name_area{
 	z-index: 100;

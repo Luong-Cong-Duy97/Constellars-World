@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Constellars World</title>
 	<link rel="manifest" href="/assets/manifest.webmanifest" />
-	<link href="css/style.css" rel="stylesheet">
 	<link href="css/final.css" rel="stylesheet">
 	<link
     rel="stylesheet"
@@ -18,19 +17,21 @@
 		<section class="logo_area">
 			<img src="img/logo.png" alt="logo"/>
 		</section>
-		<section class="banner_area">
-			<div class="banner_text banner_text2">
-				<p>Bạn đã sẵn sàng</p>
-			</div>
-			<div class="img_banner img_banner2">
-				<img src="img/name_banner2.png" alt="">
-			</div>
-		</section>
-		<section class="input_area">
-			<div class="main_input_form">
-				<button id="submitBtn">Tôi sẵn sàng</button>
-			</div>
-		</section>
+		<div class="flex-center">
+			<section class="banner_area">
+				<div class="banner_text">
+					<p>Bạn đã sẵn sàng</p>
+				</div>
+				<div class="img_banner">
+					<img src="img/name_banner2.png" alt="">
+				</div>
+			</section>
+			<section class="input_area">
+				<div class="main_input_form">
+					<button id="submitBtn"></button>
+				</div>
+			</section>
+		</div>
 	</div>
 	<div class="step2">
 		<img src="img/final_bg.gif" class="background">
@@ -54,7 +55,7 @@
 		document.getElementById("name").innerHTML = storedValue;
 		$(document).ready(function(){
 			$('#submitBtn').on('click', function(){
-				$('.step1').fadeOut();
+				$('.step1').hide();
 
 				$('.step2 .background').attr('src', "img/final_bg.gif?time=" + new Date().getTime())
 				$('.step2').show();
@@ -72,9 +73,6 @@
 				
 				$('#audio')[0].play();
 			})
-			// $(document).on('click', function(){
-			// 	$('#audio')[0].play();
-			// })
 		})
 		
 	</script>
