@@ -33,6 +33,7 @@
 		</section>
 	</div>
 	<div class="step2">
+		<img src="img/final_bg.gif" class="background">
 		<div class="video_area">
 			<div class="audio-control">
 				<i class="fa fa-volume-up"></i>
@@ -54,11 +55,8 @@
 		$(document).ready(function(){
 			$('#submitBtn').on('click', function(){
 				$('.step1').fadeOut(function(){
-					$('.step2 .background').remove();
-					var time = new Date().getTime();
-					$('.step2').prepend('<img src="img/final_bg.gif?time=' + time + '" class="background">')
+					$('.step2 .background').attr('src', "img/final_bg.gif?time=" + new Date().getTime())
 					$('.step2').show();
-					$('#audio')[0].play();
 					$('.name_text').addClass('animate__zoomInDown');
 					
 					setTimeout(function(){
@@ -71,10 +69,11 @@
 						$('.name_text').addClass('animate__bounceOut')
 					}, 4500)
 				});
-			})
-			$(document).on('click', function(){
 				$('#audio')[0].play();
 			})
+			// $(document).on('click', function(){
+			// 	$('#audio')[0].play();
+			// })
 		})
 		
 	</script>
