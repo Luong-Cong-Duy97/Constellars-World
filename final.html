@@ -54,21 +54,22 @@
 		document.getElementById("name").innerHTML = storedValue;
 		$(document).ready(function(){
 			$('#submitBtn').on('click', function(){
-				$('.step1').fadeOut(function(){
-					$('.step2 .background').attr('src', "img/final_bg.gif?time=" + new Date().getTime())
-					$('.step2').show();
-					$('.name_text').addClass('animate__zoomInDown');
-					
-					setTimeout(function(){
-						$('.name_text').removeClass('animate__zoomInDown')
-						$('.name_text').addClass('animate__infinite animate__pulse')
-					}, 1900)
-					
-					setTimeout(function(){
-						$('.name_text').removeClass('animate__pulse animate__infinite')
-						$('.name_text').addClass('animate__bounceOut')
-					}, 4500)
-				});
+				$('.step1').fadeOut();
+
+				$('.step2 .background').attr('src', "img/final_bg.gif?time=" + new Date().getTime())
+				$('.step2').show();
+				$('.name_text').addClass('animate__zoomInDown');
+				
+				setTimeout(function(){
+					$('.name_text').removeClass('animate__zoomInDown')
+					$('.name_text').addClass('animate__infinite animate__pulse')
+				}, 1900)
+				
+				setTimeout(function(){
+					$('.name_text').removeClass('animate__pulse animate__infinite')
+					$('.name_text').addClass('animate__bounceOut')
+				}, 4500)
+				
 				$('#audio')[0].play();
 			})
 			// $(document).on('click', function(){
