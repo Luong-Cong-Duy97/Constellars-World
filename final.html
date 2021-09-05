@@ -65,10 +65,10 @@
 		addGif()
 		$(document).ready(function(){
 
-			if( (window.innerHeight / window.innerWidth) == (736/414) ){
-				$('.name_area .name_text p').removeClass('full').addClass('not_full')
-			}else{
+			if( (window.innerHeight / window.innerWidth) == (719/414) ){
 				$('.name_area .name_text p').removeClass('not_full').addClass('full')
+			}else{
+				$('.name_area .name_text p').removeClass('full').addClass('not_full')
 			}
 
 			$('#submitBtn').on('click', function(){
@@ -86,7 +86,7 @@
 				setTimeout(function(){
 					$('.name_text').removeClass('animate__pulse animate__infinite')
 					$('.name_text').addClass('animate__bounceOut')
-				}, 4000)
+				}, 4400)
 				
 				$('#audio')[0].play();
 			})
