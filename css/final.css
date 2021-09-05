@@ -35,7 +35,7 @@ body {
   align-items: center;
   flex-direction: column;
   color:  #fff;
-  margin-bottom: 20vw;
+  margin-bottom: 10vh;
 }
 
 .banner_area .banner_text {
@@ -62,7 +62,7 @@ body {
 	background-size: cover;
 	border: none;
   width: 48vw;
-  height: 53px;
+  height: 12.8vw;
 }
 
 .flex-center {
@@ -124,12 +124,21 @@ body {
 	text-align: center;
 	text-shadow: -4px 0px 5px #79690080;
 	text-transform: capitalize;
- 	margin: 20px;
- 	margin-top: 37vw;
+ 	margin: 25px;
+ 	
  	-webkit-animation: glow 800ms ease-in-out infinite alternate;
   	-moz-animation: glow 800ms ease-in-out infinite alternate;
   	animation: glow 800ms ease-in-out infinite alternate;
 }
+
+.name_area .name_text .not_full {
+	margin-top: 24vh !important;
+}
+
+.name_area .name_text .full {
+	margin-top: 30vh !important;
+}
+
 @-webkit-keyframes glow {
   	from {
       color: #fff;

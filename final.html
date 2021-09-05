@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="step2">
-		<img src="img/final_bg.gif" class="background">
+		<img class="background">
 		<div class="video_area">
 			<div class="audio-control">
 				<i class="fa fa-volume-up"></i>
@@ -46,18 +46,34 @@
 				</div>
 			</section>
 			<audio id="audio" pause loop>
-			  <source src="img/Mobile_ip11.mp3" type="audio/mpeg" >
+			  <source src="img/Mobile.mp3" type="audio/mpeg" >
 			</audio>
 		</div>
 	</div>
 	<script  type="text/javascript">
 		var storedValue = localStorage.getItem("name");
 		document.getElementById("name").innerHTML = storedValue;
+		
+		function addGif(){
+			if( (window.innerHeight / window.innerWidth) == (736/414) ){
+				$('.step2 .background').attr('src', "img/Mobile600.gif")
+			}else{
+				$('.step2 .background').attr('src', "img/final_bg.gif")
+			}
+		}
+		addGif()
 		$(document).ready(function(){
+
+			if( (window.innerHeight / window.innerWidth) == (736/414) ){
+				$('.name_area .name_text p').removeClass('full').addClass('not_full')
+			}else{
+				$('.name_area .name_text p').removeClass('not_full').addClass('full')
+			}
+
 			$('#submitBtn').on('click', function(){
 				$('.step1').hide();
 
-				$('.step2 .background').attr('src', "img/final_bg.gif?time=" + new Date().getTime())
+				addGif()
 				$('.step2').show();
 				$('.name_text').addClass('animate__zoomInDown');
 				
@@ -69,7 +85,7 @@
 				setTimeout(function(){
 					$('.name_text').removeClass('animate__pulse animate__infinite')
 					$('.name_text').addClass('animate__bounceOut')
-				}, 4500)
+				}, 3800)
 				
 				$('#audio')[0].play();
 			})
