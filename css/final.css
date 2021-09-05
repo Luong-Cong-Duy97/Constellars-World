@@ -44,8 +44,8 @@ body {
 
 .banner_area .img_banner {
 	width: 100%;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	margin-right: 3vw;
 }
 
 .banner_area .img_banner img {
