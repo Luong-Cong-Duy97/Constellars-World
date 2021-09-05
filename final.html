@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>Constellars World</title>
 	<link rel="manifest" href="/assets/manifest.webmanifest" />
 	<link href="css/final.css" rel="stylesheet">
@@ -55,10 +55,11 @@
 		document.getElementById("name").innerHTML = storedValue;
 		
 		function addGif(){
+			var time = new Date().getTime()
 			if( (window.innerHeight / window.innerWidth) == (736/414) ){
-				$('.step2 .background').attr('src', "img/Mobile600.gif")
+				$('.step2 .background').attr('src', "img/Mobile600.gif?time=" + time)
 			}else{
-				$('.step2 .background').attr('src', "img/final_bg.gif")
+				$('.step2 .background').attr('src', "img/final_bg.gif?time=" + time)
 			}
 		}
 		addGif()
