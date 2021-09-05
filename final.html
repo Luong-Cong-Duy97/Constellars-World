@@ -66,9 +66,9 @@
 		$(document).ready(function(){
 
 			if( (window.innerHeight / window.innerWidth) == (719/414) ){
-				$('.name_area .name_text p').removeClass('not_full').addClass('full')
-			}else{
 				$('.name_area .name_text p').removeClass('full').addClass('not_full')
+			}else{
+				$('.name_area .name_text p').removeClass('not_full').addClass('full')
 			}
 
 			$('#submitBtn').on('click', function(){
